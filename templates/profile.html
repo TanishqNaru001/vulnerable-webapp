@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <p>Username: {{ user[1] }}</p>
+    <p>Email: {{ user[2] }}</p>
+    <form action="/change-password" method="POST">
+        <input type="password" name="new_password" placeholder="New Password" required>
+        <button type="submit">Change Password</button>
+    </form>
+    <a href="/upload">Upload File</a> | 
+    <a href="/gallery">View Gallery</a> |
+    <a href="/logout">Logout</a>
+</body>
+</html>
